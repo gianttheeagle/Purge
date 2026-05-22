@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <unistd.h>
 
 static const char app_banner[] =
     "    ____                      \n"
@@ -33,6 +34,11 @@ int main() {
     char built_command[18];
     int n_flag;
     char choice;
+
+    if (geteuid() != 0) {
+        fprintf(stderr, "Error: Purge must be run as root.\n");
+        return 1;
+    }
 
     printf("%s", app_banner);
     ask_and_run("\nRemove Obsolete Distfiles?", "eclean-dist");
