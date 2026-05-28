@@ -6,4 +6,6 @@ Purge is an Interactive Gentoo system maintenance utility for cleaning distfiles
 - eclean-kernel
 
 To install all dependencies at once:
+```sh
 emerge --ask app-portage/gentoolkit app-admin/eclean-kernel
+```
