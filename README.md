@@ -9,3 +9,10 @@ To install all dependencies at once:
 ```sh
 emerge --ask app-portage/gentoolkit app-admin/eclean-kernel
 ```
+
+## Installation
+To install Purge itself run:
+```sh
+gcc -o purge purge.c
+sudo mv purge /usr/local/bin/
+```
