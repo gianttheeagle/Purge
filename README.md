@@ -16,3 +16,9 @@ To install Purge itself run:
 gcc -o purge purge.c
 sudo mv purge /usr/local/bin/
 ```
+
+To compile with your `make.conf` CFLAGS:
+```sh
+gcc $CFLAGS -o purge purge.c
+sudo mv purge /usr/local/bin/
+```
