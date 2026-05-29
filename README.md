@@ -24,6 +24,6 @@ sudo mv purge /usr/local/bin/
 ```
 ## Usage
 To use Purge simply run:
-``sh
+```sh
 purge
 ```
