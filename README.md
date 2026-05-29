@@ -22,3 +22,8 @@ To compile with your `make.conf` CFLAGS:
 gcc $CFLAGS -o purge purge.c
 sudo mv purge /usr/local/bin/
 ```
+## Usage
+To use Purge simply run:
+``sh
+purge
+```
